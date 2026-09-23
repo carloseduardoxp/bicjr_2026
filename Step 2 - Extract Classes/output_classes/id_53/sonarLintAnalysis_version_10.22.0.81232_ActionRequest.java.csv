@@ -1,0 +1,4 @@
+rule key,start line,end line,severity,message,type
+java:S1598,5,5,CONVENTIONAL,File path "" should match package name "azure.resourcemanager.operationtemplates.models". Move the file or change the package name.,null,
+java:S1186,80,80,COMPLETE,Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.,null,
+java:S1186,32,32,COMPLETE,Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.,null,

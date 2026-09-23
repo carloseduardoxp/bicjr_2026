@@ -1,0 +1,5 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "io.github.panghy.javaflow.scheduler". Move the file or change the package name.,null,
+java:S112,151,151,COMPLETE,Define and throw a dedicated exception instead of using a generic one.,null,
+java:S1481,177,177,CLEAR,Remove this unused "future" local variable.,null,
+java:S2142,189,189,COMPLETE,Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.,null,

@@ -1,0 +1,7 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "org.camunda.community.benchmarks". Move the file or change the package name.,null,
+java:S1450,16,16,CLEAR,Remove the "config" field and declare it as a local variable in the relevant methods.,null,
+java:S100,25,25,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S100,60,60,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S100,89,89,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S100,123,123,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,

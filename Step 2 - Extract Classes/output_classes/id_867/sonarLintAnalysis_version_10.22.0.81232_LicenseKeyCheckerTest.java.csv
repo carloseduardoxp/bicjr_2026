@@ -1,0 +1,8 @@
+rule key,start line,end line,severity,message,type
+java:S120,1,1,IDENTIFIABLE,Rename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.,null,
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "stirling.software.SPDF.EE". Move the file or change the package name.,null,
+java:S1192,52,52,DISTINCT,Define a constant instead of duplicating this literal "filekey" 3 times.,null,
+java:S100,25,25,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S100,37,37,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S100,50,50,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S100,66,66,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,

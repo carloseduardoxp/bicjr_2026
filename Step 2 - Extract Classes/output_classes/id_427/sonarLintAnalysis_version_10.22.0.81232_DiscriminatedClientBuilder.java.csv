@@ -1,0 +1,5 @@
+rule key,start line,end line,severity,message,type
+java:S1488,207,207,CLEAR,Immediately return this expression instead of assigning it to the temporary variable "client".,null,
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "type.union.discriminated". Move the file or change the package name.,null,
+java:S1854,220,220,LOGICAL,Remove this useless assignment to local variable "buildConfiguration".,null,
+java:S1481,219,219,CLEAR,Remove this unused "buildConfiguration" local variable.,null,

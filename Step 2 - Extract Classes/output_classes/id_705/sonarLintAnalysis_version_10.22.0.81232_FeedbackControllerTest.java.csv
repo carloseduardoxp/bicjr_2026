@@ -1,0 +1,4 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "org.open4goods.api.controller.api". Move the file or change the package name.,null,
+java:S1192,55,55,DISTINCT,Define a constant instead of duplicating this literal "https://example.com/1" 3 times.,null,
+java:S1192,90,90,DISTINCT,Define a constant instead of duplicating this literal "127.0.0.1" 3 times.,null,

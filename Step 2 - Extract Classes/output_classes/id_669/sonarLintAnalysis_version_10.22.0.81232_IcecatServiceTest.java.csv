@@ -1,0 +1,5 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "org.open4goods.commons.services". Move the file or change the package name.,null,
+java:S1192,44,44,DISTINCT,Define a constant instead of duplicating this literal "Color" 4 times.,null,
+java:S3011,57,57,MODULAR,This accessibility update should be removed.,null,
+java:S3011,60,60,MODULAR,This accessibility bypass should be removed.,null,

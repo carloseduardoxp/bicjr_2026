@@ -1,0 +1,5 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "com.smalaca.trainingprograms.infrastructure.outbox.jpa". Move the file or change the package name.,null,
+java:S1450,41,41,CLEAR,Remove the "factory" field and declare it as a local variable in the relevant methods.,null,
+java:S1602,69,69,CLEAR,Remove useless curly braces around statement (sonar.java.source not set. Assuming 8 or greater.),null,
+java:S1602,83,83,CLEAR,Remove useless curly braces around statement (sonar.java.source not set. Assuming 8 or greater.),null,

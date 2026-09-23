@@ -1,0 +1,5 @@
+rule key,start line,end line,severity,message,type
+java:S117,31,31,IDENTIFIABLE,Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "org.seasar.doma.boot.sample". Move the file or change the package name.,null,
+java:S1199,51,51,CLEAR,Extract this nested code block into a method.,null,
+java:S1199,63,63,CLEAR,Extract this nested code block into a method.,null,

@@ -1,0 +1,2 @@
+rule key,start line,end line,severity,message,type
+java:S1598,5,5,CONVENTIONAL,File path "" should match package name "type.union.discriminated". Move the file or change the package name.,null,

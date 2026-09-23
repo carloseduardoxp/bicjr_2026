@@ -1,0 +1,5 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "examples". Move the file or change the package name.,null,
+java:S106,25,25,MODULAR,Replace this use of System.out by a logger.,null,
+java:S106,32,32,MODULAR,Replace this use of System.out by a logger.,null,
+java:S106,37,37,MODULAR,Replace this use of System.out by a logger.,null,

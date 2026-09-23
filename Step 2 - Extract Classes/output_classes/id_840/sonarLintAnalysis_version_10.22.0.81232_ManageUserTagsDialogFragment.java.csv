@@ -1,0 +1,6 @@
+rule key,start line,end line,severity,message,type
+java:S1104,24,24,MODULAR,Make TAG a static final constant or non-public and provide accessors if needed.,null,
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "com.simon.harmonichackernews". Move the file or change the package name.,null,
+java:S1444,24,24,MODULAR,Make this "public static TAG" field final,null,
+java:S3008,24,24,IDENTIFIABLE,Rename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S1450,26,26,CLEAR,Remove the "adapter" field and declare it as a local variable in the relevant methods.,null,

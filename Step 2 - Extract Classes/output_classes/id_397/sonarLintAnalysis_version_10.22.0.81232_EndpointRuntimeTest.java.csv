@@ -1,0 +1,5 @@
+rule key,start line,end line,severity,message,type
+java:S1598,17,17,CONVENTIONAL,File path "" should match package name "com.markelliot.barista.endpoints". Move the file or change the package name.,null,
+java:S100,42,42,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S100,54,54,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S100,64,64,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,

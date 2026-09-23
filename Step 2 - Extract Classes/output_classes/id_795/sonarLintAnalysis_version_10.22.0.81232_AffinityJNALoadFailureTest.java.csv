@@ -1,0 +1,7 @@
+rule key,start line,end line,severity,message,type
+java:S1220,null,null,MODULAR,Move this file to a named package.,null,
+java:S3011,29,29,MODULAR,This accessibility update should be removed.,null,
+java:S3011,31,31,MODULAR,This accessibility update should be removed.,null,
+java:S3011,32,32,MODULAR,This accessibility bypass should be removed.,null,
+java:S3011,34,34,MODULAR,This accessibility bypass should be removed.,null,
+java:S3011,43,43,MODULAR,This accessibility bypass should be removed.,null,

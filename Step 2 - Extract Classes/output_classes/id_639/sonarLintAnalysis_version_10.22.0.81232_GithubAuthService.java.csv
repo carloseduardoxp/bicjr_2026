@@ -1,0 +1,4 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "com.openisle.service". Move the file or change the package name.,null,
+java:S1192,55,55,DISTINCT,Define a constant instead of duplicating this literal "email" 3 times.,null,
+java:S3776,28,28,FOCUSED,Refactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.,null,

@@ -1,0 +1,4 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "com.openisle.service". Move the file or change the package name.,null,
+java:S3740,28,28,COMPLETE,Provide the parametrized type for this generic.,null,
+java:S3740,29,29,COMPLETE,Provide the parametrized type for this generic.,null,

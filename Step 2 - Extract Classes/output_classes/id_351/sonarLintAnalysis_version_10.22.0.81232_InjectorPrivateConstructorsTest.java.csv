@@ -1,0 +1,8 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "com.cedarsoftware.io.reflect". Move the file or change the package name.,null,
+java:S1192,38,38,DISTINCT,Define a constant instead of duplicating this literal "number" 4 times.,null,
+java:S1192,24,24,DISTINCT,Define a constant instead of duplicating this literal "value" 3 times.,null,
+java:S100,23,23,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S3011,25,25,MODULAR,This accessibility update should be removed.,null,
+java:S100,37,37,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S3011,39,39,MODULAR,This accessibility update should be removed.,null,

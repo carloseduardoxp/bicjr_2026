@@ -1,0 +1,10 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "com.cedarsoftware.util". Move the file or change the package name.,null,
+java:S2129,40,40,CONVENTIONAL,Remove this "BigInteger" constructor,null,
+java:S100,55,55,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S100,80,80,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S100,102,102,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S2129,121,121,CONVENTIONAL,Remove this "BigInteger" constructor,null,
+java:S100,143,143,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S100,180,180,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S100,209,209,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,

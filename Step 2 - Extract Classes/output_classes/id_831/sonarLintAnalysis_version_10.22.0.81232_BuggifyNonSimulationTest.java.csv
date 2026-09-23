@@ -1,0 +1,5 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "io.github.panghy.javaflow.simulation". Move the file or change the package name.,null,
+java:S1192,51,51,DISTINCT,Define a constant instead of duplicating this literal "always_bug" 4 times.,null,
+java:S1192,31,31,DISTINCT,Define a constant instead of duplicating this literal "default" 4 times.,null,
+java:S1192,24,24,DISTINCT,Define a constant instead of duplicating this literal "any_bug" 3 times.,null,

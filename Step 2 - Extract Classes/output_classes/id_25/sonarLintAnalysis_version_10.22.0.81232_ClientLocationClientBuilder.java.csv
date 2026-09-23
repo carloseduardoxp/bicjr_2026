@@ -1,0 +1,4 @@
+rule key,start line,end line,severity,message,type
+java:S1488,234,235,CLEAR,Immediately return this expression instead of assigning it to the temporary variable "client".,null,
+java:S1488,273,276,CLEAR,Immediately return this expression instead of assigning it to the temporary variable "httpPipeline".,null,
+java:S1598,5,5,CONVENTIONAL,File path "" should match package name "azure.clientgenerator.core.clientlocation". Move the file or change the package name.,null,

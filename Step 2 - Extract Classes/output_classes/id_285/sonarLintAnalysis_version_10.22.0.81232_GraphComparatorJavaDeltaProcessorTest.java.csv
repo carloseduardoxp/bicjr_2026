@@ -1,0 +1,9 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "com.cedarsoftware.util". Move the file or change the package name.,null,
+java:S112,26,26,COMPLETE,Define and throw a dedicated exception instead of using a generic one.,null,
+java:S1192,161,161,DISTINCT,Define a constant instead of duplicating this literal "setField" 4 times.,null,
+java:S1192,37,37,DISTINCT,Define a constant instead of duplicating this literal "arrayField" 4 times.,null,
+java:S1192,124,124,DISTINCT,Define a constant instead of duplicating this literal "strField" 4 times.,null,
+java:S1192,66,66,DISTINCT,Define a constant instead of duplicating this literal "listField" 6 times.,null,
+java:S1192,94,94,DISTINCT,Define a constant instead of duplicating this literal "mapField" 4 times.,null,
+java:S3011,28,28,MODULAR,This accessibility update should be removed.,null,

@@ -1,0 +1,4 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "type.union.discriminated.implementation". Move the file or change the package name.,null,
+java:S112,65,65,COMPLETE,Define and throw a dedicated exception instead of using a generic one.,null,
+java:S1192,102,102,DISTINCT,Define a constant instead of duplicating this literal "application/json" 3 times.,null,

@@ -1,0 +1,11 @@
+rule key,start line,end line,severity,message,type
+java:S1104,15,15,MODULAR,Make text a static final constant or non-public and provide accessors if needed.,null,
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "com.cedarsoftware.io". Move the file or change the package name.,null,
+java:S1192,58,58,DISTINCT,Use already-defined constant 'CONST' instead of duplicating its value here.,null,
+java:S1192,29,29,DISTINCT,Define a constant instead of duplicating this literal "getValueByReflect" 3 times.,null,
+java:S1118,22,22,CLEAR,Add a private constructor to hide the implicit public one.,null,
+java:S3011,30,30,MODULAR,This accessibility update should be removed.,null,
+java:S100,39,39,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S3011,42,42,MODULAR,This accessibility update should be removed.,null,
+java:S3011,54,54,MODULAR,This accessibility update should be removed.,null,
+java:S1068,19,19,CLEAR,Remove this unused "number" private field.,null,

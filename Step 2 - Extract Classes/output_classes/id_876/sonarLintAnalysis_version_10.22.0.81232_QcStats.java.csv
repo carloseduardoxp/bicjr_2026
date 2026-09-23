@@ -1,0 +1,5 @@
+rule key,start line,end line,severity,message,type
+java:S120,12,12,IDENTIFIABLE,Rename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.,null,
+java:S1598,12,12,CONVENTIONAL,File path "" should match package name "DNAnalyzer.qc". Move the file or change the package name.,null,
+java:S1192,127,127,DISTINCT,Define a constant instead of duplicating this literal "Bases" 5 times.,null,
+java:S3457,97,97,LOGICAL,%n should be used in place of \n to produce the platform-specific line separator.,null,

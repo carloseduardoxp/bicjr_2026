@@ -1,0 +1,5 @@
+rule key,start line,end line,severity,message,type
+java:S120,1,1,IDENTIFIABLE,Rename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.,null,
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "DNAnalyzer.utils.alignment". Move the file or change the package name.,null,
+java:S112,24,24,COMPLETE,Define and throw a dedicated exception instead of using a generic one.,null,
+java:S1118,8,8,CLEAR,Add a private constructor to hide the implicit public one.,null,

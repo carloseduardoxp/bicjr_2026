@@ -1,0 +1,5 @@
+rule key,start line,end line,severity,message,type
+java:S120,1,1,IDENTIFIABLE,Rename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.,null,
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "ti4.map.manager". Move the file or change the package name.,null,
+java:S3776,61,61,FOCUSED,Refactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.,null,
+java:S2864,76,76,EFFICIENT,Iterate over the "entrySet" instead of the "keySet".,null,

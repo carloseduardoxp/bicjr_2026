@@ -1,0 +1,7 @@
+rule key,start line,end line,severity,message,type
+java:S1104,6,6,MODULAR,Make size a static final constant or non-public and provide accessors if needed.,null,
+java:S1104,6,6,MODULAR,Make blockSize a static final constant or non-public and provide accessors if needed.,null,
+java:S1104,6,6,MODULAR,Make associativity a static final constant or non-public and provide accessors if needed.,null,
+java:S1104,6,6,MODULAR,Make penalty a static final constant or non-public and provide accessors if needed.,null,
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "org.edumips64.core.cache". Move the file or change the package name.,null,
+java:S1659,6,6,FORMATTED,Declare "blockSize" and all following declarations on a separate line.,null,

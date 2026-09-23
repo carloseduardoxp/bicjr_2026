@@ -1,0 +1,4 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "de.morihofi.acmeserver.cryptography.csr". Move the file or change the package name.,null,
+java:S1192,47,47,DISTINCT,Define a constant instead of duplicating this literal "example.com" 3 times.,null,
+java:S1192,48,48,DISTINCT,Define a constant instead of duplicating this literal "127.0.0.1" 3 times.,null,

@@ -1,0 +1,7 @@
+rule key,start line,end line,severity,message,type
+java:S1598,5,5,CONVENTIONAL,File path "" should match package name "azure.resourcemanager.operationtemplates.implementation". Move the file or change the package name.,null,
+java:S1192,158,158,DISTINCT,Define a constant instead of duplicating this literal "Parameter this.client.getEndpoint() is required and cannot be null." 8 times.,null,
+java:S1192,171,171,DISTINCT,Define a constant instead of duplicating this literal "application/json" 8 times.,null,
+java:S1192,169,169,DISTINCT,Define a constant instead of duplicating this literal "Parameter widgetName is required and cannot be null." 6 times.,null,
+java:S1192,166,166,DISTINCT,Define a constant instead of duplicating this literal "Parameter resourceGroupName is required and cannot be null." 6 times.,null,
+java:S1192,162,162,DISTINCT,Define a constant instead of duplicating this literal "Parameter this.client.getSubscriptionId() is required and cannot be null." 8 times.,null,

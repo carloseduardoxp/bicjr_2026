@@ -1,0 +1,4 @@
+rule key,start line,end line,severity,message,type
+java:S1066,46,46,CLEAR,Merge this if statement with the enclosing one.,null,
+java:S1598,8,8,CONVENTIONAL,File path "" should match package name "io.camunda.optimize.rest.security.oauth". Move the file or change the package name.,null,
+java:S3776,61,61,FOCUSED,Refactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.,null,

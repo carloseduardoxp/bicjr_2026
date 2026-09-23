@@ -1,0 +1,7 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "net.openhft.ticker". Move the file or change the package name.,null,
+java:S3011,17,17,MODULAR,This accessibility update should be removed.,null,
+java:S3011,19,19,MODULAR,This accessibility update should be removed.,null,
+java:S3011,20,20,MODULAR,This accessibility bypass should be removed.,null,
+java:S3011,21,21,MODULAR,This accessibility bypass should be removed.,null,
+java:S3011,26,26,MODULAR,This accessibility update should be removed.,null,

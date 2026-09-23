@@ -1,0 +1,9 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "io.github.panghy.javaflow.io.network". Move the file or change the package name.,null,
+java:S1192,102,102,DISTINCT,Define a constant instead of duplicating this literal "Message " 4 times.,null,
+java:S1192,63,63,DISTINCT,Define a constant instead of duplicating this literal "127.0.0.1" 5 times.,null,
+java:S1155,202,202,CLEAR,Use isEmpty() to check whether the collection is empty or not.,null,
+java:S106,209,209,MODULAR,Replace this use of System.out by a logger.,null,
+java:S1602,337,337,CLEAR,Remove useless curly braces around statement and then remove useless return keyword (sonar.java.source not set. Assuming 8 or greater.),null,
+java:S1602,349,349,CLEAR,Remove useless curly braces around statement and then remove useless return keyword (sonar.java.source not set. Assuming 8 or greater.),null,
+java:S1602,365,365,CLEAR,Remove useless curly braces around statement and then remove useless return keyword (sonar.java.source not set. Assuming 8 or greater.),null,

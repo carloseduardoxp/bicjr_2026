@@ -1,0 +1,3 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "de.morihofi.acmeserver.core.api.acme.api.endpoints.order". Move the file or change the package name.,null,
+java:S3011,105,105,MODULAR,This accessibility update should be removed.,null,

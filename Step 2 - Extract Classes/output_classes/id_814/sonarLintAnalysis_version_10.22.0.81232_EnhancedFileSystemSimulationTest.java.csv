@@ -1,0 +1,12 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "io.github.panghy.javaflow.io". Move the file or change the package name.,null,
+java:S1192,202,202,DISTINCT,Define a constant instead of duplicating this literal "Simulated open error" 3 times.,null,
+java:S1602,65,65,CLEAR,Remove useless curly braces around statement and then remove useless return keyword (sonar.java.source not set. Assuming 8 or greater.),null,
+java:S1602,72,72,CLEAR,Remove useless curly braces around statement and then remove useless return keyword (sonar.java.source not set. Assuming 8 or greater.),null,
+java:S1602,78,78,CLEAR,Remove useless curly braces around statement and then remove useless return keyword (sonar.java.source not set. Assuming 8 or greater.),null,
+java:S1602,89,89,CLEAR,Remove useless curly braces around statement and then remove useless return keyword (sonar.java.source not set. Assuming 8 or greater.),null,
+java:S1602,95,95,CLEAR,Remove useless curly braces around statement and then remove useless return keyword (sonar.java.source not set. Assuming 8 or greater.),null,
+java:S1602,108,108,CLEAR,Remove useless curly braces around statement and then remove useless return keyword (sonar.java.source not set. Assuming 8 or greater.),null,
+java:S3776,178,178,FOCUSED,Refactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.,null,
+java:S1602,244,244,CLEAR,Remove useless curly braces around statement and then remove useless return keyword (sonar.java.source not set. Assuming 8 or greater.),null,
+java:S1602,334,334,CLEAR,Remove useless curly braces around statement and then remove useless return keyword (sonar.java.source not set. Assuming 8 or greater.),null,

@@ -1,0 +1,2 @@
+rule key,start line,end line,severity,message,type
+java:S1598,17,17,CONVENTIONAL,File path "" should match package name "net.openhft.affinity.impl". Move the file or change the package name.,null,

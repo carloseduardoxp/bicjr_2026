@@ -1,0 +1,6 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "com.halil.ozel.movieparadise.ui.detail". Move the file or change the package name.,null,
+java:S1450,45,45,CLEAR,Remove the "person" field and declare it as a local variable in the relevant methods.,null,
+java:S1450,47,47,CLEAR,Remove the "presenter" field and declare it as a local variable in the relevant methods.,null,
+java:S106,99,99,MODULAR,Replace this use of System.out by a logger.,null,
+java:S106,106,106,MODULAR,Replace this use of System.out by a logger.,null,

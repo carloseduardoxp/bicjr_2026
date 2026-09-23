@@ -1,0 +1,115 @@
+package com.openisle.integration;
+
+import com.openisle.model.User;
+import com.openisle.repository.UserRepository;
+import com.openisle.service.EmailService;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.http.*;
+
+import java.util.List;
+import java.util.Map;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+class ComplexFlowIntegrationTest {
+
+    @Autowired
+    private TestRestTemplate rest;
+
+    @Autowired
+    private UserRepository users;
+
+    @MockBean
+    private EmailService emailService;
+
+    private String registerAndLogin(String username, String email) {
+        HttpHeaders h = new HttpHeaders();
+        h.setContentType(MediaType.APPLICATION_JSON);
+        rest.postForEntity("/api/auth/register", new HttpEntity<>(
+                Map.of("username", username, "email", email, "password", "pass"), h), Map.class);
+        User u = users.findByUsername(username).orElseThrow();
+        rest.postForEntity("/api/auth/verify", new HttpEntity<>(
+                Map.of("username", username, "code", u.getVerificationCode()), h), Map.class);
+        ResponseEntity<Map> resp = rest.postForEntity("/api/auth/login", new HttpEntity<>(
+                Map.of("username", username, "password", "pass"), h), Map.class);
+        return (String) resp.getBody().get("token");
+    }
+
+    private ResponseEntity<Map> postJson(String url, Map<?,?> body, String token) {
+        HttpHeaders h = new HttpHeaders();
+        h.setContentType(MediaType.APPLICATION_JSON);
+        if (token != null) h.setBearerAuth(token);
+        return rest.exchange(url, HttpMethod.POST, new HttpEntity<>(body, h), Map.class);
+    }
+
+    @Test
+    void nestedCommentsVisibleInPost() {
+        String t1 = registerAndLogin("alice", "a@example.com");
+        String t2 = registerAndLogin("bob", "b@example.com");
+
+        ResponseEntity<Map> postResp = postJson("/api/posts",
+                Map.of("title", "Hello", "content", "World"), t1);
+        Long postId = ((Number)postResp.getBody().get("id")).longValue();
+
+        ResponseEntity<Map> c1Resp = postJson("/api/posts/" + postId + "/comments",
+                Map.of("content", "first"), t2);
+        Long c1 = ((Number)c1Resp.getBody().get("id")).longValue();
+
+        ResponseEntity<Map> r1Resp = postJson("/api/comments/" + c1 + "/replies",
+                Map.of("content", "reply1"), t1);
+        Long r1 = ((Number)r1Resp.getBody().get("id")).longValue();
+
+        postJson("/api/comments/" + r1 + "/replies",
+                Map.of("content", "reply2"), t2);
+
+        Map post = rest.getForObject("/api/posts/" + postId, Map.class);
+        assertEquals("Hello", post.get("title"));
+        List<?> comments = (List<?>) post.get("comments");
+        assertEquals(1, comments.size());
+        Map<?,?> cMap = (Map<?,?>) comments.get(0);
+        assertEquals("first", cMap.get("content"));
+        List<?> replies1 = (List<?>) cMap.get("replies");
+        assertEquals(1, replies1.size());
+        Map<?,?> rMap = (Map<?,?>) replies1.get(0);
+        assertEquals("reply1", rMap.get("content"));
+        List<?> replies2 = (List<?>) rMap.get("replies");
+        assertEquals(1, replies2.size());
+        assertEquals("reply2", ((Map<?,?>)replies2.get(0)).get("content"));
+    }
+
+    @Test
+    void reactionsReturnedForPostAndComment() {
+        String t1 = registerAndLogin("carol", "c@example.com");
+        String t2 = registerAndLogin("dave", "d@example.com");
+
+        ResponseEntity<Map> postResp = postJson("/api/posts",
+                Map.of("title", "React", "content", "Test"), t1);
+        Long postId = ((Number)postResp.getBody().get("id")).longValue();
+
+        postJson("/api/posts/" + postId + "/reactions",
+                Map.of("type", "LIKE"), t2);
+
+        ResponseEntity<Map> cResp = postJson("/api/posts/" + postId + "/comments",
+                Map.of("content", "hi"), t1);
+        Long commentId = ((Number)cResp.getBody().get("id")).longValue();
+
+        postJson("/api/comments/" + commentId + "/reactions",
+                Map.of("type", "DISLIKE"), t2);
+
+        Map post = rest.getForObject("/api/posts/" + postId, Map.class);
+        List<?> reactions = (List<?>) post.get("reactions");
+        assertEquals(1, reactions.size());
+        assertEquals("LIKE", ((Map<?,?>)reactions.get(0)).get("type"));
+
+        List<?> comments = (List<?>) post.get("comments");
+        Map<?,?> comment = (Map<?,?>) comments.get(0);
+        List<?> creactions = (List<?>) comment.get("reactions");
+        assertEquals(1, creactions.size());
+        assertEquals("DISLIKE", ((Map<?,?>)creactions.get(0)).get("type"));
+    }
+}

@@ -1,0 +1,6 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "com.cedarsoftware.io". Move the file or change the package name.,null,
+java:S112,34,34,COMPLETE,Define and throw a dedicated exception instead of using a generic one.,null,
+java:S3011,36,36,MODULAR,This accessibility update should be removed.,null,
+java:S3011,122,122,MODULAR,This accessibility update should be removed.,null,
+java:S3011,166,166,MODULAR,This accessibility update should be removed.,null,

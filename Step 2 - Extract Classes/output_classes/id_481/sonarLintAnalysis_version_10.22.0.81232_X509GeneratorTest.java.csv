@@ -1,0 +1,4 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "de.morihofi.acmeserver.cryptography.certificate". Move the file or change the package name.,null,
+java:S112,14,14,COMPLETE,Define and throw a dedicated exception instead of using a generic one.,null,
+java:S3011,16,16,MODULAR,This accessibility update should be removed.,null,

@@ -1,0 +1,7 @@
+rule key,start line,end line,severity,message,type
+java:S1066,100,100,CLEAR,Merge this if statement with the enclosing one.,null,
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "org.open4goods.commons.services.loader". Move the file or change the package name.,null,
+java:S3776,79,79,FOCUSED,Refactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.,null,
+java:S899,91,91,COMPLETE,Do something with the "boolean" value returned by "delete".,null,
+java:S4042,91,91,CONVENTIONAL,Use "java.nio.file.Files#delete" here for better messages on error conditions.,null,
+java:S3776,136,136,FOCUSED,Refactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.,null,

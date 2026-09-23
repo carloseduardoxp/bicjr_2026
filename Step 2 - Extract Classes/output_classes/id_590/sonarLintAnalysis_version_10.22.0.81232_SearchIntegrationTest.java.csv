@@ -1,0 +1,7 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "com.openisle.integration". Move the file or change the package name.,null,
+java:S3740,36,36,COMPLETE,Provide the parametrized type for this generic.,null,
+java:S3740,49,49,COMPLETE,Provide the parametrized type for this generic.,null,
+java:S3740,61,61,COMPLETE,Provide the parametrized type for this generic.,null,
+java:S3740,64,64,COMPLETE,Provide the parametrized type for this generic.,null,
+java:S1192,32,32,DISTINCT,Define a constant instead of duplicating this literal "username" 3 times.,null,

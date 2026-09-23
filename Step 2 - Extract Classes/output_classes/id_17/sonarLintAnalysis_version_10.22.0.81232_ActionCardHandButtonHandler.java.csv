@@ -1,0 +1,10 @@
+rule key,start line,end line,severity,message,type
+java:S120,1,1,IDENTIFIABLE,Rename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.,null,
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "ti4.buttons.handlers.actioncards". Move the file or change the package name.,null,
+java:S1192,216,216,DISTINCT,Define a constant instead of duplicating this literal "yssaril" 3 times.,null,
+java:S1192,213,213,DISTINCT,Define a constant instead of duplicating this literal " triggered **Autonetic Memory** option." 3 times.,null,
+java:S1192,211,211,DISTINCT,Define a constant instead of duplicating this literal "autonetic_memory" 3 times.,null,
+java:S1845,209,209,IDENTIFIABLE,Rename method "draw1Ac" to prevent any misunderstanding/clash with method "draw1AC".,null,
+java:S3776,55,55,FOCUSED,Refactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.,null,
+java:S108,278,278,CLEAR,Remove this block of code, fill it in, or add a comment explaining why it is empty.,null,
+java:S6541,55,55,FOCUSED,A "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 83 to 64, Complexity from 19 to 14, Nesting Level from 3 to 2, Number of Variables from 22 to 6.,null,

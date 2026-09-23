@@ -1,0 +1,2 @@
+rule key,start line,end line,severity,message,type
+java:S1598,8,8,CONVENTIONAL,File path "" should match package name "io.camunda.zeebe.gateway.rest.annotation". Move the file or change the package name.,null,

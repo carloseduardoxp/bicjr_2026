@@ -1,0 +1,8 @@
+rule key,start line,end line,severity,message,type
+java:S1104,16,16,MODULAR,Make value a static final constant or non-public and provide accessors if needed.,null,
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "com.cedarsoftware.util". Move the file or change the package name.,null,
+java:S1192,26,26,DISTINCT,Define a constant instead of duplicating this literal "value" 3 times.,null,
+java:S2065,17,17,CLEAR,Remove the "transient" modifier from this field.,null,
+java:S3011,33,33,MODULAR,This accessibility update should be removed.,null,
+java:S3011,46,46,MODULAR,This accessibility update should be removed.,null,
+java:S3011,61,61,MODULAR,This accessibility update should be removed.,null,

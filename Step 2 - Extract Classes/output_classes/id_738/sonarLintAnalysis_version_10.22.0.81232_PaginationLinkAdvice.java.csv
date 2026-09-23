@@ -1,0 +1,4 @@
+rule key,start line,end line,severity,message,type
+java:S2184,56,56,CLEAR,Cast one of the operands of this subtraction operation to a "long".,null,
+java:S2184,59,59,CLEAR,Cast one of the operands of this addition operation to a "long".,null,
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "org.open4goods.nudgerfrontapi.controller.advice". Move the file or change the package name.,null,

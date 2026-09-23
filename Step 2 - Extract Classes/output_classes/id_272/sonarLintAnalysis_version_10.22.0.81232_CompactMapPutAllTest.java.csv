@@ -1,0 +1,4 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "com.cedarsoftware.util". Move the file or change the package name.,null,
+java:S1192,20,20,DISTINCT,Define a constant instead of duplicating this literal "alpha" 3 times.,null,
+java:S1192,24,24,DISTINCT,Define a constant instead of duplicating this literal "charlie" 3 times.,null,

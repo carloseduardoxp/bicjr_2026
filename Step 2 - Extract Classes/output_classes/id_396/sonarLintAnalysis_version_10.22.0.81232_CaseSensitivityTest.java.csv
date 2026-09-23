@@ -1,0 +1,7 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "org.mdcfg". Move the file or change the package name.,null,
+java:S1192,45,45,DISTINCT,Define a constant instead of duplicating this literal "[white, black, metalic, gray]" 3 times.,null,
+java:S1192,41,41,DISTINCT,Define a constant instead of duplicating this literal "crossover" 5 times.,null,
+java:S1192,30,30,DISTINCT,Define a constant instead of duplicating this literal "engine.Type" 3 times.,null,
+java:S1192,47,47,DISTINCT,Define a constant instead of duplicating this literal "horsepower" 4 times.,null,
+java:S1192,41,41,DISTINCT,Define a constant instead of duplicating this literal "available-colors" 5 times.,null,

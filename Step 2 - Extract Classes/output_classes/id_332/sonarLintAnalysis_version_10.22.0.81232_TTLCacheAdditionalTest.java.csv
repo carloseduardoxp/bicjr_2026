@@ -1,0 +1,7 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "com.cedarsoftware.util". Move the file or change the package name.,null,
+java:S3011,34,34,MODULAR,This accessibility update should be removed.,null,
+java:S3011,37,37,MODULAR,This accessibility update should be removed.,null,
+java:S3011,48,48,MODULAR,This accessibility update should be removed.,null,
+java:S3011,55,55,MODULAR,This accessibility update should be removed.,null,
+java:S3011,59,59,MODULAR,This accessibility update should be removed.,null,

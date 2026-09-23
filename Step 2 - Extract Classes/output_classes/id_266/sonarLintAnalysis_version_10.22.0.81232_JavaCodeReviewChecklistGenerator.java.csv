@@ -1,0 +1,7 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "info.jab.xml". Move the file or change the package name.,null,
+java:S112,41,41,COMPLETE,Define and throw a dedicated exception instead of using a generic one.,null,
+java:S112,67,67,COMPLETE,Define and throw a dedicated exception instead of using a generic one.,null,
+java:S1135,29,29,COMPLETE,Complete the task associated to this TODO comment.,null,
+java:S1135,44,44,COMPLETE,Complete the task associated to this TODO comment.,null,
+java:S1874,46,46,CONVENTIONAL,Remove this use of "XMLReaderFactory"; it is deprecated.,null,

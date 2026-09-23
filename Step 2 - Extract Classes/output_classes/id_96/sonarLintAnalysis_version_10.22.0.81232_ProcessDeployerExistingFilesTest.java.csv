@@ -1,0 +1,9 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "org.camunda.community.benchmarks". Move the file or change the package name.,null,
+java:S1450,15,15,CLEAR,Remove the "config" field and declare it as a local variable in the relevant methods.,null,
+java:S106,28,28,MODULAR,Replace this use of System.out by a logger.,null,
+java:S1481,32,32,CLEAR,Remove this unused "originalContent" local variable.,null,
+java:S106,51,51,MODULAR,Replace this use of System.out by a logger.,null,
+java:S106,61,61,MODULAR,Replace this use of System.out by a logger.,null,
+java:S1481,65,65,CLEAR,Remove this unused "originalContent" local variable.,null,
+java:S106,84,84,MODULAR,Replace this use of System.out by a logger.,null,

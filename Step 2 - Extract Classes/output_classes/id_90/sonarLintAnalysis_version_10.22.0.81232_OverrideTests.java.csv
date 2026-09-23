@@ -1,0 +1,2 @@
+rule key,start line,end line,severity,message,type
+java:S1598,4,4,CONVENTIONAL,File path "" should match package name "azure.clientgenerator.core.methodoverride". Move the file or change the package name.,null,

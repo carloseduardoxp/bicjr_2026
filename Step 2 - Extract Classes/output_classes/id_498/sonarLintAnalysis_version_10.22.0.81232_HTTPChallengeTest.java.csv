@@ -1,0 +1,4 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "de.morihofi.acmeserver.core.api.acme.challenges". Move the file or change the package name.,null,
+java:S4426,83,83,TRUSTWORTHY,Use a key length of at least 2048 bits for RSA cipher algorithm.,null,
+java:S4426,101,101,TRUSTWORTHY,Use a key length of at least 2048 bits for RSA cipher algorithm.,null,

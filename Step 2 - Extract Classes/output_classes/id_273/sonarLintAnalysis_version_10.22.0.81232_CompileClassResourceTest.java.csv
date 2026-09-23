@@ -1,0 +1,4 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "com.cedarsoftware.util". Move the file or change the package name.,null,
+java:S1872,77,77,LOGICAL,Use an "instanceof" comparison instead.,null,
+java:S3011,85,85,MODULAR,This accessibility update should be removed.,null,

@@ -1,0 +1,10 @@
+rule key,start line,end line,severity,message,type
+java:S1598,1,1,CONVENTIONAL,File path "" should match package name "com.cedarsoftware.io". Move the file or change the package name.,null,
+java:S112,30,30,COMPLETE,Define and throw a dedicated exception instead of using a generic one.,null,
+java:S1192,13,13,DISTINCT,Define a constant instead of duplicating this literal "safeToString" 3 times.,null,
+java:S100,12,12,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S3011,14,14,MODULAR,This accessibility update should be removed.,null,
+java:S100,20,20,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S3011,22,22,MODULAR,This accessibility update should be removed.,null,
+java:S100,35,35,IDENTIFIABLE,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,null,
+java:S3011,37,37,MODULAR,This accessibility update should be removed.,null,
